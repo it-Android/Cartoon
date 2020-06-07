@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#1CB2D6"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dl_website_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="切换来源"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/dl_website_ll_box"
+        android:layout_below="@id/dl_website_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="8dp">
+
+        <RadioGroup
+            android:id="@+id/dl_website_rg_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8">
+            <RadioButton
+                android:id="@+id/dl_website_rb_mhk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="漫画狂漫画" />
+
+            <RadioButton
+                android:id="@+id/dl_website_rb_toho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="土豪漫画" />
+
+            <RadioButton
+                android:id="@+id/dl_website_rb_lry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LRY API接口" />
+        </RadioGroup>
+
+        <ScrollView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:layout_marginRight="4sp"
+            android:layout_height="90dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="#FF0000"
+                    android:background="#00CAFF"
+                    android:text="注意：因为切换来源属于切换不同的数据网站，在不同的网站的漫画阅读与收藏数据将不共享，收藏的漫画记录将会保存，未收藏的漫画阅读记录将以该漫画最后阅读时间为限两个月后自动删除。"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/dl_website_ll_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/dl_website_tv_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:background="#93FC81"
+            android:gravity="center"
+            android:padding="5sp"
+            android:textColor="#000DFF"
+            android:text="确定"/>
+        <TextView
+            android:id="@+id/dl_website_tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:background="#FF5858"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:padding="5sp"
+            android:text="取消"/>
+    </LinearLayout>
+
+</RelativeLayout>

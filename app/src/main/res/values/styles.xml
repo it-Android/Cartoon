@@ -1,0 +1,49 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowFullscreen">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="text_display_style1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="radio_display_style1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@drawable/main_radio_text_color</item>
+    </style>
+
+    <style name="radio_display_style2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_margin">4sp</item>
+        <item name="android:paddingLeft">6sp</item>
+        <item name="android:paddingRight">6sp</item>
+        <item name="android:paddingTop">2sp</item>
+        <item name="android:paddingBottom">2sp</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:background">@drawable/radio_bg_display</item>
+        <item name="android:textColor">@drawable/radio_bg_display</item>
+        <item name="android:text">标签</item>
+    </style>
+
+</resources>

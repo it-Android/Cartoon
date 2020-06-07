@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+    <FrameLayout
+        android:id="@+id/main_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/main_view1">
+    </FrameLayout>
+
+    <View
+        android:id="@+id/main_view1"
+        android:background="#000"
+        android:layout_width="match_parent"
+        android:layout_above="@id/main_rg_box"
+        android:layout_height="1px"/>
+
+    <RadioGroup
+        android:id="@+id/main_rg_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <RadioButton
+            android:id="@+id/main_rb_home"
+            style="@style/radio_display_style1"
+            android:drawableTop="@drawable/home_icon_display"
+            android:checked="true"
+            android:text="首页"/>
+        <RadioButton
+            android:id="@+id/main_rb_search"
+            style="@style/radio_display_style1"
+            android:drawableTop="@drawable/search_icon_display"
+            android:text="搜索"/>
+        <RadioButton
+            android:id="@+id/main_rb_collect"
+            style="@style/radio_display_style1"
+            android:drawableTop="@drawable/collect_icon_display"
+            android:text="收藏"/>
+        <RadioButton
+            android:id="@+id/main_rb_mine"
+            style="@style/radio_display_style1"
+            android:drawableTop="@drawable/mine_icon_display"
+            android:text="我的"/>
+    </RadioGroup>
+
+</RelativeLayout>

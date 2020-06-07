@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/recycle_item_read_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E7E5E3"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/recycle_item_read_tv_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="图片地址错误，加载失败！"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

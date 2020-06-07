@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/fra_home_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="center"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:layout_scrollFlags="scroll|enterAlways|snap"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/fra_home_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="最新"
+                    android:textColor="#FFF"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/fra_home_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="最新"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/fra_home_draw"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/fra_home_tv_not"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="正在搜索，请稍等"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/fra_home_swipe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/fra_home_recycle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#DDF5E7C7"
+            android:layout_gravity="left"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <ScrollView
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                    <LinearLayout
+                        android:id="@+id/fra_home_ll_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="小编分类"
+                            android:textColor="#075491"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <RadioGroup
+                            android:id="@+id/fra_home_rg_xb0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/fra_home_rb_xb0"
+                                style="@style/radio_display_style2" />
+
+                            <RadioButton
+                                android:id="@+id/fra_home_rb_xb1"
+                                style="@style/radio_display_style2"/>
+
+                            <RadioButton
+                                android:id="@+id/fra_home_rb_xb2"
+                                style="@style/radio_display_style2"/>
+
+                            <RadioButton
+                                android:id="@+id/fra_home_rb_xb3"
+                                style="@style/radio_display_style2" />
+
+                            <RadioButton
+                                android:id="@+id/fra_home_rb_xb4"
+                                style="@style/radio_display_style2" />
+
+                            <RadioButton
+                                android:id="@+id/fra_home_rb_xb5"
+                                style="@style/radio_display_style2" />
+
+                        </RadioGroup>
+
+                        <RadioGroup
+                            android:id="@+id/fra_home_rg_xb1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/fra_home_rb_xb6"
+                                style="@style/radio_display_style2" />
+
+                            <RadioButton
+                                android:id="@+id/fra_home_rb_xb7"
+                                style="@style/radio_display_style2" />
+
+                            <RadioButton
+                                android:id="@+id/fra_home_rb_xb8"
+                                style="@style/radio_display_style2" />
+
+                            <RadioButton
+                                android:id="@+id/fra_home_rb_xb9"
+                                style="@style/radio_display_style2" />
+
+                            <RadioButton
+                                android:id="@+id/fra_home_rb_xb10"
+                                style="@style/radio_display_style2" />
+
+                            <RadioButton
+                                android:id="@+id/fra_home_rb_xb11"
+                                style="@style/radio_display_style2" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="全部分类"
+                            android:textColor="#075491"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:id="@+id/fra_home_ll_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="类型"
+                                android:textColor="#0EC211"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <RadioGroup
+                                android:id="@+id/fra_home_rg_lx0"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/fra_home_rb_lx0"
+                                    style="@style/radio_display_style2"/>
+
+                                <RadioButton
+                                    android:id="@+id/fra_home_rb_lx1"
+                                    style="@style/radio_display_style2"/>
+
+                                <RadioButton
+                                    android:id="@+id/fra_home_rb_lx2"
+                                    style="@style/radio_display_style2"/>
+
+                                <RadioButton
+                                    android:id="@+id/fra_home_rb_lx3"
+                                    style="@style/radio_display_style2"/>
+                                <RadioButton
+                                    android:id="@+id/fra_home_rb_lx4"
+                                    style="@style/radio_display_style2"/>
+                                <RadioButton
+                                    android:id="@+id/fra_home_rb_lx5"
+                                    style="@style/radio_display_style2"/>
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/fra_home_ll_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="地区"
+                                android:textColor="#0EC211"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <RadioGroup
+                                android:id="@+id/fra_home_rg_dq0"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/fra_home_rb_dq0"
+                                    style="@style/radio_display_style2"/>
+
+                                <RadioButton
+                                    android:id="@+id/fra_home_rb_dq1"
+                                    style="@style/radio_display_style2" />
+
+                                <RadioButton
+                                    android:id="@+id/fra_home_rb_dq2"
+                                    style="@style/radio_display_style2" />
+
+                                <RadioButton
+                                    android:id="@+id/fra_home_rb_dq3"
+                                    style="@style/radio_display_style2" />
+
+                                <RadioButton
+                                    android:id="@+id/fra_home_rb_dq4"
+                                    style="@style/radio_display_style2" />
+
+                                <RadioButton
+                                    android:id="@+id/fra_home_rb_dq5"
+                                    style="@style/radio_display_style2" />
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/fra_home_ll_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="剧情"
+                                android:textColor="#0EC211"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <RadioGroup
+                                android:id="@+id/fra_home_rg_jq0"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/fra_home_rb_jq0"
+                                    style="@style/radio_display_style2"/>
+
+                                <RadioButton
+                                    android:id="@+id/fra_home_rb_jq1"
+                                    style="@style/radio_display_style2"/>
+
+                                <RadioButton
+                                    android:id="@+id/fra_home_rb_jq2"
+                                    style="@style/radio_display_style2"/>
+
+                                <RadioButton
+                                    android:id="@+id/fra_home_rb_jq3"
+                                    style="@style/radio_display_style2" />
+
+                                <RadioButton
+                                    android:id="@+id/fra_home_rb_jq4"
+                                    style="@style/radio_display_style2"/>
+
+                                <RadioButton
+                                    android:id="@+id/fra_home_rb_jq5"
+                                    style="@style/radio_display_style2" />
+
+                            </RadioGroup>
+
+                            <RadioGroup
+                                android:id="@+id/fra_home_rg_jq1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/fra_home_rb_jq6"
+                                    style="@style/radio_display_style2"/>
+
+                                <RadioButton
+
+                                    android:id="@+id/fra_home_rb_jq7"
+                                    style="@style/radio_display_style2"/>
+
+                                <RadioButton
+                                    android:id="@+id/fra_home_rb_jq8"
+                                    style="@style/radio_display_style2"/>
+
+                                <RadioButton
+                                    android:id="@+id/fra_home_rb_jq9"
+                                    style="@style/radio_display_style2" />
+
+                                <RadioButton
+                                    android:id="@+id/fra_home_rb_jq10"
+                                    style="@style/radio_display_style2" />
+
+                                <RadioButton
+                                    android:id="@+id/fra_home_rb_jq11"
+                                    style="@style/radio_display_style2"/>
+                            </RadioGroup>
+
+                            <RadioGroup
+                                android:id="@+id/fra_home_rg_jq2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/fra_home_rb_jq12"
+                                    style="@style/radio_display_style2"/>
+
+                                <RadioButton
+                                    android:id="@+id/fra_home_rb_jq13"
+                                    style="@style/radio_display_style2"/>
+
+                                <RadioButton
+                                    android:id="@+id/fra_home_rb_jq14"
+                                    style="@style/radio_display_style2" />
+
+                                <RadioButton
+                                    android:id="@+id/fra_home_rb_jq15"
+                                    style="@style/radio_display_style2" />
+
+                                <RadioButton
+                                    android:id="@+id/fra_home_rb_jq16"
+                                    style="@style/radio_display_style2"/>
+
+                                <RadioButton
+                                    android:id="@+id/fra_home_rb_jq17"
+                                    style="@style/radio_display_style2"/>
+                            </RadioGroup>
+
+                            <RadioGroup
+                                android:id="@+id/fra_home_rg_jq3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/fra_home_rb_jq18"
+                                    style="@style/radio_display_style2"/>
+
+                                <RadioButton
+                                    android:id="@+id/fra_home_rb_jq19"
+                                    style="@style/radio_display_style2"/>
+
+                                <RadioButton
+                                    android:id="@+id/fra_home_rb_jq20"
+                                    style="@style/radio_display_style2"/>
+
+                                <RadioButton
+                                    android:id="@+id/fra_home_rb_jq21"
+                                    style="@style/radio_display_style2" />
+
+                                <RadioButton
+                                    android:id="@+id/fra_home_rb_jq22"
+                                    style="@style/radio_display_style2"/>
+
+                                <RadioButton
+                                    android:id="@+id/fra_home_rb_jq23"
+                                    style="@style/radio_display_style2"/>
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
